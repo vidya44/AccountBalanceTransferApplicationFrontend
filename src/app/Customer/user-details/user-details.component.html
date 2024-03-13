@@ -1,0 +1,31 @@
+<div class="container">
+
+    <!-- Buttons Section -->
+  <div class="buttons">
+    <button (click)="redirectToAddMoney()">Add Money</button>
+    <button (click)=" redirectToSendMoney()" class="right">Send Money</button>
+    <button (click)="redirectToViewTransactions()" class="center">View Transactions</button>
+    <button (click)="redirectToUpdateCustomer()" class="right">Update Customer</button>
+  </div>
+
+   <div class="user-profile-container">
+    <div class="user-profile" *ngIf="loggedInUser">
+      <h2>User Profile</h2>
+      <div>
+        <div *ngIf="loggedInUser"> <p>Welcome, {{ loggedInUser.customerName }}!</p>
+         
+          <p><strong>Customer Name:</strong> {{ loggedInUser.customerName }}</p>
+          <!-- <p><strong>Last Name:</strong>  {{ loggedInUser.lastName }}</p> -->
+          <p><strong>Aadhaar Number:</strong> {{ loggedInUser.aadhaarNumber }}</p>
+          <p><strong>Account Number:</strong> {{ loggedInUser.accountNumber }}</p>
+          <p><strong>Account Balance:</strong> {{ loggedInUser.accountBalance }}</p>
+          <p><strong>Mobile Number:</strong> {{ loggedInUser.mobileNumber }}</p>
+          <p><strong>Date of Birth:</strong> {{ loggedInUser.dateOfBirth }}</p>
+          <p><strong>Login Time:</strong> {{ loggedInUser.loginTime }}</p>
+          <!-- Add other user-related information here -->
+        </div>
+      </div>
+    </div>
+   </div>
+  </div>
+  

@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  } */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* margin: 100; */
+    font-family: Arial, sans-serif;
+    background-image: url(src/assets/background-image.jpg); 
+    /* Replace 'background.jpg' with your actual image file name */
+    background-size: cover; 
+    /* Adjust the background size as needed */
+    background-position: center; /* Adjust the background position as needed */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+  }
+  
+  router-outlet {
+    display: block;
+  }
+  
+  /* Additional styling for links */
+  a {
+    text-decoration: none;
+    color: #3498db;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

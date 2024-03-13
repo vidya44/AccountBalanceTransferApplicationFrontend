@@ -1,0 +1,56 @@
+/* user-details.component.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* background-color: azure; */
+  }
+  .user-profile-container {
+    background-color: #fff;
+
+  }
+  
+  .buttons {
+    position: absolute;
+  top: 100px;
+  left: 10px;
+    /* display: flex;
+    justify-content: space-between; /* Adjust the alignment based on your preference */
+    /* width: 100%; /* Ensure buttons take the full width */
+    /* margin-bottom: 20px; */ 
+  }
+  
+  .buttons button {
+    margin-right: 8px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: rgb(255, 221, 0);
+    color: rgb(20, 19, 19);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .user-profile {
+    border: 1px solid #ccc;
+    padding: 50px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  

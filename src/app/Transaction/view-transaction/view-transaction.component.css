@@ -1,0 +1,62 @@
+/* Center the content on the page */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Style the transactions container */
+  .view-transactions-container {
+    width: 60%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /*  margin to separate the container from the button */
+  }
+  
+  h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+  }
+  
+  /* Apply the hover animation */
+  li:hover {
+    transform: scale(1.05);
+  }
+  
+  strong {
+    color: #007bff;
+  }
+  
+  /* Style the button */
+  .buttons button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .buttons button:hover {
+    background-color: #0056b3;
+  }
+  

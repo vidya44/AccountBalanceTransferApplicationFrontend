@@ -1,0 +1,18 @@
+<!-- update-customer.component.html -->
+
+<div class="container">
+    <h2>Update Customer</h2>
+    <form (ngSubmit)="updateCustomer(updateCustomerForm)" #updateCustomerForm="ngForm">
+      
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="customer.password" required>
+      </div>
+      <div class="form-group">
+        <label for="mobileNumber">Mobile Number:</label>
+        <input type="text" class="form-control" id="mobileNumber" name="mobileNumber" [(ngModel)]="customer.mobileNumber" required>
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="updateCustomerForm.invalid">Update Customer</button>
+    </form>
+  </div>
+  

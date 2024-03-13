@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="view-transactions-container">
+      <h2>Transaction History</h2>
+      <ul>
+        <li *ngFor="let transaction of transactionsByUsername">
+         <strong>Transaction Id:</strong> {{ transaction.transactionId }} <br />
+          <strong>Transaction Type:</strong> {{ transaction.transactionType }} <br />
+          <strong>Amount:</strong> {{ transaction.amount }} <br />
+          <strong>AddMoneyTimestamp :</strong> {{ transaction.addMoneyTimestamp }} <br />
+          <strong>sendMoneyTimestamp :</strong> {{ transaction.sendMoneyTimestamp }} <br /><br/>
+        </li>
+      </ul>
+    </div>
+    <!-- Buttons Section -->
+    <div class="buttons">
+        <button (click)="redirectToUserDetails()">User Details</button>
+        </div>
+  </div>
+  

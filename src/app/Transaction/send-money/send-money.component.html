@@ -1,0 +1,15 @@
+<div class="container">
+    <h2>Send Money</h2>
+    <form #sendMoneyForm="ngForm" (ngSubmit)="sendMoney(sendMoneyForm)">
+      <div class="form-group">
+        <label for="receiverUserName">Receiver Username:</label>
+        <input type="text" id="receiverUserName" name="receiverUserName" [(ngModel)]="receiverUserName" required>
+      </div>
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" [(ngModel)]="amount" required>
+      </div>
+      <button type="submit">Send Money</button>
+    </form>
+  </div>
+  
